@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de nota por aluno</title>
+</head>
+<body>
+<h1>Escola CEDTEC</h1>
+<p>Olá, isso é apenas um teste. PAPAPAPAPPIIPIPIPIPOPPOPOPO</p>
+<style>
+body{background-color: aquamarine;
+color: white;
+font: normal 15pt arial
+}
+
+h1{color: black;
+font: normal 20pt arial 
+}
+
+p{color: black;
+font: normal 20pt arial}
+</style>
+<script>
+    window.alert(`Bem vindo ao sistema de gestão escolar, prossiga para realizar a sua consulta`)
+    let aluno = prompt(`Por gentileza, digite o nome do(a) aluno(a) para a realização do cálculo da média.`)
+    let n1 = Number(prompt(`Digite a primeira nota que você deseja registrar.`))
+    let n2 = Number(prompt(`Agora digite a segunda nota.`))
+    let n3 = Number(prompt(`Por último, digite a terceira nota.`))  
+    let media = (n1 + n2 + n3) / 3
+    let m = media.toFixed(2)
+    let Rfinal = m >= 36 ? "Aprovado" : "Reprovado"
+
+    alert(`A média da nota do aluno(a) ${aluno} é ${m}, portanto ele está ${Rfinal}.`)
+</script> 
+</body>
+</html>
